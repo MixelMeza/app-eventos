@@ -36,3 +36,75 @@
     transform: rotate(360deg);
   }
 }
+/* Estilos para la lista sin viñetas y alineada horizontalmente */
+ul {
+  list-style-type: none; /* Elimina las viñetas */
+  padding: 0; /* Elimina el relleno por defecto */
+  margin: 0; /* Elimina los márgenes por defecto */
+  display: flex; /* Alinea los elementos en una fila */
+  justify-content: center; /* Centra los elementos en la página */
+  background-color: #333; /* Color de fondo del menú */
+}
+
+/* Estilos para los elementos de la lista */
+li {
+  margin: 0 15px; /* Espaciado entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces */
+ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno en los enlaces */
+  display: block; /* Hacer que el enlace ocupe todo el espacio del <li> */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto al pasar el ratón */
+ul li a:hover {
+  background-color: #555; /* Cambia el color de fondo al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados al hacer hover */
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 20px;
+}
+button{
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.libros-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.libros-table th,
+.libros-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.libros-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.libros-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.libros-table tr:hover {
+  background-color: #ddd;
+}
